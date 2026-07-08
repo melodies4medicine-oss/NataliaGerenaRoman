@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Natalia Gerena-Roman</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="siteNav">
+  <div class="logo">N<span>.</span>G-R</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="artwork.html">Artwork</a></li>
+    <li><a href="project.html">Melodies for Medicine</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<header class="page-header" id="contact-hero">
+  <div class="decor-layer">
+    <div class="blob" style="top:-70px; left:-60px; width:280px; height:280px; color:var(--olive-light); opacity:0.3;">
+      <svg viewBox="0 0 200 200"><path fill="currentColor" d="M45,-58C58,-50,68,-35,72,-18C76,-1,74,18,64,33C54,48,36,59,17,64C-2,69,-24,68,-42,58C-60,48,-74,29,-77,9C-80,-11,-72,-33,-57,-47C-42,-61,-21,-67,-1,-66C19,-65,32,-66,45,-58Z" transform="translate(100 100)"/></svg>
+    </div>
+    <div class="doodle float" style="top:18%; right:10%; width:46px; color:var(--red); --r:10deg;">
+      <svg viewBox="0 0 60 90"><ellipse cx="14" cy="76" rx="12" ry="8" transform="rotate(-20 14 76)" fill="currentColor"/><path d="M25 72 L25 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M25 10 C40 14 46 24 44 34" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+    </div>
+    <div class="doodle float" style="bottom:10%; left:10%; width:56px; color:var(--orange); --r:-8deg; animation-delay:.5s;">
+      <svg viewBox="0 0 80 140"><path d="M42 8 C20 8 18 30 34 42 C54 56 60 74 46 90 C34 102 18 98 18 84 C18 74 28 70 34 76 C40 82 32 90 26 86" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M46 90 C40 104 42 118 34 128" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/><ellipse cx="30" cy="128" rx="9" ry="7" fill="currentColor"/></svg>
+    </div>
+  </div>
+  <span class="eyebrow">Say Hello</span>
+  <h1>Contact</h1>
+  <p>Reach out about music, advocacy work, or bringing Melodies for Medicine to a new care setting.</p>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-card mfm">
+        <span class="eyebrow">The Initiative</span>
+        <h3>Melodies for Medicine</h3>
+        <p>For hospitals, partnerships, or anyone who wants to bring the program to a new care setting.</p>
+        <a class="mail-link" href="mailto:melodies4medicine26@gmail.com">melodies4medicine26@gmail.com →</a>
+      </div>
+      <div class="contact-card natalia">
+        <span class="eyebrow">Natalia</span>
+        <h3>Say hello</h3>
+        <p>For music, advocacy work, or anything else — reach me directly.</p>
+        <a class="mail-link" href="mailto:natalia.gerena24@gmail.com">natalia.gerena24@gmail.com →</a>
+      </div>
+    </div>
+    <div class="social-link-wrap">
+      <a class="social-link" href="https://www.instagram.com/nataliaaa.grrr?igsh=eWxvajd1MWx4Z2dq&utm_source=qr" target="_blank" rel="noopener">Find me on Instagram →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Natalia Gerena-Roman · Hopatcong, NJ · Melodies for Medicine Initiative
+</footer>
+
+<script>
+  const nav = document.getElementById('siteNav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+</script>
+
+</body>
+</html>
